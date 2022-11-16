@@ -15,7 +15,7 @@ namespace TodoApi.Models.Entities
 
         [Required]
         public string Email { get; set; }
-        public string PhoneNumber { get; set; }
+        public string? PhoneNumber { get; set; }
 
         public ICollection<TodoEntity> Todos { get; set; }
         public ICollection<CommentEntity> Comments { get; set; }

@@ -1,4 +1,7 @@
-﻿namespace TodoApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+
+namespace TodoApi.Models
 {
     public class TodoModel
     {
@@ -9,7 +12,7 @@
         public DateTime Modified { get; set; }
         public StatusModel Status { get; set; }
         public CustomerModel Customer { get; set; }
-        public ICollection<CommentModel> Comments { get; set; }
+        public IEnumerable<CommentModel> Comments { get; set; }
 
         
 

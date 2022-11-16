@@ -1,4 +1,6 @@
-﻿namespace TodoApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TodoApi.Models
 {
     public class CustomerModel
     {

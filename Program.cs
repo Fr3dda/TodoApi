@@ -1,6 +1,6 @@
 //using TodoApi.Models.Entities;
-using Microsoft.EntityFrameworkCore;
 using TodoApi.Context;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<DataContext>( x => x.UseSqlServer(builder.Configuration.GetConnectionString("azure_sql_db")));
+builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("azure_sql_db")));
 
 
 var app = builder.Build();
